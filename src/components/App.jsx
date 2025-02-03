@@ -15,10 +15,8 @@ function App() {
                 </div>
             </div>
             <hr></hr>
-            <div className="row">
-                <div>
+            <div>
                 <Courses />
-                </div>
             </div>
         </div>
     )
