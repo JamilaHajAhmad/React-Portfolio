@@ -4,6 +4,7 @@ function Courses() {
         <div>
             <h2 className='mainHeading'>Courses</h2>
             {COURSES.map(COURSE => <Course key={COURSE.id} course={COURSE} />)}
+            <hr />
         </div>
     )
 }
