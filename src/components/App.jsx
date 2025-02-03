@@ -2,6 +2,7 @@ import Profile from "./Profile"
 import Qualifications from "./Qualifications";
 import Courses from "./Courses";
 import "../main.css"
+import Socials from "./Socials";
 
 function App() {
     return (
@@ -14,10 +15,10 @@ function App() {
                     <Qualifications />
                 </div>
             </div>
-            <hr></hr>
             <div>
                 <Courses />
             </div>
+            <Socials />
         </div>
     )
 }
