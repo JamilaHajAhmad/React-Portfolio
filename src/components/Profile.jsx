@@ -3,7 +3,7 @@ import profileImg from "../assets/profile-img.jpg";
 function Profile() {
     const imgStyle = {width: "200px", height: "200px", borderRadius: "50%"};
     const btnStyle = {backgroundColor: "teal", color: "white",
-            padding: "10px 20px", border: "none", borderRadius: "5px", fontSize: "16px"};
+            padding: "10px 20px", border: "none", borderRadius: "5px", fontSize: "16px", cursor: "pointer"};
     const [state, setDisplayBio] = useState({displayBio: false});
     const toggle = () => {
         setDisplayBio({displayBio: !state.displayBio});
