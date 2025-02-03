@@ -1,18 +1,21 @@
-import course1 from '../assets/course1.jpg';
-//import course2 from '../assets/course2.jpg';
-//import course3 from '../assets/course3.jpg';
+import COURSES from '../data/courses';
 function Courses() {
     return (
         <div>
-            <h2>Courses</h2>
-            <div className='card'>
-                <img src={course1} alt="Course" />
-                <h3>HTML</h3>
-                <p>
-                Learn the basics of HTML, the essential language for creating web pages.
-                </p>
-                <button>Enroll</button>
-            </div>
+            <h2 className='mainHeading'>Courses</h2>
+            {COURSES.map(COURSE => <Course key={COURSE.id} course={COURSE} />)}
+        </div>
+    )
+}
+
+function Course(props) {
+    const { title, description, img, link } = props.course;
+    return (
+        <div className="card">
+            <img src={img} alt="Course"/>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <button onClick={() => window.location.href = link}>Enroll</button>
         </div>
     )
 }
