@@ -10,7 +10,7 @@ function Title() {
     setInterval(() => {
         setTitleIndex(() => (titleIndex + 1) % TITLES.length);
     }, 4000);
-    return <p className='title'>{TITLES[titleIndex]}</p>
+    return <p className='title'>I am {TITLES[titleIndex]}</p>
 }
 
 export default Title;
