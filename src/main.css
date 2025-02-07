@@ -126,3 +126,13 @@ body {
         opacity: 0;
     }
 }
+
+header {
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
