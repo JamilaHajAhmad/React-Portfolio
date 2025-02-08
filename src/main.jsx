@@ -2,12 +2,14 @@ import {createRoot} from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./components/App";
 import Quotes from "./components/Quotes";
+import Gallery from "./components/Gallery";
 
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<App />} />
             <Route path="/quotes" element={<Quotes />} />
+            <Route path="/gallery" element={<Gallery />} />
         </Routes>
     </BrowserRouter>
     // BrowserRouter wraps the Routes component, providing routing capabilities.
