@@ -10,6 +10,9 @@ function Header() {
                     <li>
                         <Link to="/quotes">Quotes</Link>
                     </li>
+                    <li>
+                        <Link to="/gallery">Gallery</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
