@@ -3,9 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./components/App";
 import Quotes from "./components/Quotes";
 import Gallery from "./components/Gallery";
+import Header from "./components/Header";
 
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
+        <Header />
         <Routes>
             <Route exact path="/" element={<App />} />
             <Route path="/quotes" element={<Quotes />} />
