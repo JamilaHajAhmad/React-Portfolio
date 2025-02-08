@@ -23,7 +23,8 @@ createRoot(document.getElementById("root")).render(
     Since the react finds the component which is associated with an url by contains method, we need to make sure that
     it'll render the correct one, not just the first matching route, so we have to add exact attribute
     */
-
+   // The Gallery component is rendered when the URL is '/gallery'.
+   // Header component is rendered on every page.
 );
 
 /*
