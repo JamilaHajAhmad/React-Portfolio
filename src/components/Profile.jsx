@@ -11,7 +11,7 @@ function Profile() {
     }
 
     return(
-        <div>
+        <div className="profile">
             <img src={profileImg} alt="profile photo" style={imgStyle} />
             <h2>Hello</h2>
             <p>My name is Jamila HajAhmad and I&apos;m a software engineer </p>
