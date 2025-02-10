@@ -17,14 +17,14 @@ function Quotes() {
     }
     return (
         <div>
-            <h2>Today&apos;s Quote</h2>
-            <p>{quote.content}</p>
+            <h2 className="title">Today&apos;s Quote</h2>
+            <p className="quote">{quote.content}</p>
             <hr />
-            <h2>Do you wanna more?</h2>
-            <button onClick={()=> fetchQuotes()}>Show More</button>
+            <h2 className="title">Do you wanna more?</h2>
+            <button className="btn" onClick={()=> fetchQuotes()}>Show More</button>
             {
                 quotes.map(quote => (
-                    <p key={quote.id}>{quote.content}</p>
+                    <p className="quote" key={quote.id}>{quote.content}</p>
                 ))
             }
         </div>
